@@ -1,0 +1,14 @@
+.me {
+	color: var(--red);
+}
+
+.SouKick-badge {
+	width: 50px;
+	height: 25px;
+	padding-top: 10px;
+	flex-shrink: 1;
+}
+
+.paragrafo-footer {
+	color: var(--black);
+}

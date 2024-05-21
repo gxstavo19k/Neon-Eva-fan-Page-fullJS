@@ -1,0 +1,98 @@
+@import url(./footer.css);
+@import url(./header2.css);
+@import url(./mobile.css);
+@import url(./global.css);
+
+html {
+
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  background-color: rgb(8, 34, 61);
+}
+
+.SouKick-wall {
+  height: 19px;
+}
+
+.span {
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+
+.hide {
+  display: none;
+}
+
+
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+
+  left: 0;
+  right: 0;
+  height: 35%;
+
+  background: rgba(29, 27, 27, 0.24);
+
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.carousel-item:hover::after {
+  opacity: 10;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 05%;
+
+  left: 0;
+  right: 0;
+  height: 25%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  pointer-events: none;
+}
+
+.carousel-item:hover .carousel-caption {
+  opacity: 1;
+  color: white;
+}
+
+.heading-carrousel-2 {
+  color: #d55228;
+}
+
+.heading-carrousel-1 {
+  color: #58a3ff;
+}
+
+.heading-carrousel-3 {
+  color: #402c5f;
+}
+
+.paragrafo-carrousel {
+  color: white;
+}
