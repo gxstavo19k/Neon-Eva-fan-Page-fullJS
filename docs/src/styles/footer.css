@@ -1,5 +1,6 @@
 .me {
 	color: var(--red);
+	transition: ease-in 0.2s;
 }
 
 .SouKick-badge {
@@ -11,4 +12,8 @@
 
 .paragrafo-footer {
 	color: var(--black);
+}
+
+.me:hover {
+	color: var(--blue);
 }

@@ -33,19 +33,19 @@ function criarHeader() {
       </li>
     </ul>
     <div class="navigation__social">
-      <a href="https://github.com/gustavo19k/1o-projeto-web">
+      <a href="https://github.com/gustavo19k/1o-projeto-web" title="Link do repositório deste projeto">
         <img id="github-logo"
           src="https://raw.githubusercontent.com/gustavo19k/assets-SouKick/main/1o-projeto-web/github.svg"
           alt="GitHub">
       </a>
-      <a href="https://www.figma.com/file/zihjoBwL6gKZkchwUgvsbi/Prototipo-Figma?type=design&mode=design&t=lsXZkVwmyfICO1Se-1"
-        target="_blank">
+      <a href="https://instagram.com/gustavo19.dev"
+        target="_blank" title="Link do meu perfil Instagram. ">
         <img src="public/images/instagram.svg" alt="Instagram">
       </a>
 
 
       <a href="https://www.figma.com/design/zihjoBwL6gKZkchwUgvsbi/Prototipo-Figma?node-id=0-1&t=Lf1mAOkv5mC4atb9-0" target="_blank">
-        <img src="public/images/figma.svg" alt="Link do figma">
+        <img src="public/images/figma.svg" alt="Link do figma" title="Link do projeto no Figma deste site.">
       </a>
     </div>
   </div>
@@ -64,19 +64,19 @@ function criarHeader() {
   const navLinks = document.querySelectorAll('.navigation__link');
 
   function handleClick() {
-      console.log("Button clicked");
-      button.classList.toggle('active');
-      navigation.classList.toggle('active');
-      const carousel = document.getElementById('carouselExampleIndicators');
-      carousel.classList.toggle('hide');
+    console.log("Button clicked");
+    button.classList.toggle('active');
+    navigation.classList.toggle('active');
+    const carousel = document.getElementById('carouselExampleIndicators');
+    carousel.classList.toggle('hide');
   }
 
   button.addEventListener('click', handleClick);
   navLinks.forEach(link => {
-      link.addEventListener('click', handleClick);
+    link.addEventListener('click', handleClick);
   });
 
-  console.log("Header created and event listeners added");
+
 }
 
 export { criarHeader };
