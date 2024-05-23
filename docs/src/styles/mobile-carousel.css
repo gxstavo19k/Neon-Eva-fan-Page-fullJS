@@ -1,0 +1,12 @@
+#carouselMobile .carousel-item img {
+    width: 100%;
+    /* height: 25vh; */
+    object-fit: contain;
+}
+
+.carousel-item img{
+ /* max-height: 25vh;  */
+ object-fit: contain;
+}
+
+

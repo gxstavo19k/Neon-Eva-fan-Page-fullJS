@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 
 <head>
-
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favico/favicon.png">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Adicione o CSS do Bootstrap via CDN -->
@@ -11,6 +11,8 @@
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="src/global.css">
     <link rel="stylesheet" href="src/styles/wallpapers.css">
+    <link rel="stylesheet" href="src/styles/mobile-carousel.css" media="screen (max-height:1078px) and (max-width: 1024)">
+
 
 </head>
 
@@ -18,7 +20,7 @@
     <script type="module" src="src/app.js"></script>
     <!-- importando o componente do header; -->
     <div class="container mt-1 mb-5 ">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -65,6 +67,54 @@
                 <span class="visually-hidden">Próximo</span>
             </button>
         </div>
+
+        <!-- Carrousel mobile -->
+
+        <div id="carouselMobile" class="carousel slide d-lg-none " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="public/images/wallpapers/1280x2120_Evangelion-3.0.jpg" class="d-block w-100 " alt="...">
+                    <div class="carousel-caption1">
+                        <!-- <h5 class="heading-carrousel-1">Wallpaper 1!</h5>
+                        <p>Você pode baixar esse papel de parede clicando no link abaixo!</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="public/images/wallpapers/1280x2120_the-End.png" class="d-block w-100 " alt="...">
+                    <div class="carousel-caption1">
+                        <!-- <h5 class="heading-carrousel-2">Wallpaper 2!</h5>
+                        <p>Você pode baixar esse papel de parede clicando no link abaixo!</p> -->
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="public/images/wallpapers/Wallpaper-Asuka-Shinji-Ayanami-Gendo_1280x2120.jpg"
+                        class="d-block w-100 " alt="...">
+                    <div class="carousel-caption1">
+                        <!-- <h5 class="heading-carrousel-3">Wallpaper 3!</h5>
+                        <p class="paragrafo-carrousel">Você pode baixar esse papel de parede clicando no link abaixo!
+                        </p> -->
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMobile" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselMobile" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+
         <!-- Botão de download -->
         <div class="text-center mt-4" id="botao">
             <a href="#" id="downloadButton" class="btn btn-primary"

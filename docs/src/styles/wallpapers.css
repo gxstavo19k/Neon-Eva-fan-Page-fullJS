@@ -1,7 +1,7 @@
 @import url(./footer.css);
-@import url(./header2.css);
+
 @import url(./mobile.css);
-@import url(./global.css);
+@import url(../global.css);
 
 html {
 
@@ -33,7 +33,7 @@ a:hover {
 
 
 
-.carousel-item {
+ .carousel-item {
   position: relative;
 }
 

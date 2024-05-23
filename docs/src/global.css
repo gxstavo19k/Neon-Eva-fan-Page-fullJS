@@ -57,3 +57,16 @@ button,
 a {
 	color: var(--text);
 }
+
+#carouselMobile {
+
+    max-height: 475px; 
+    overflow: hidden;
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (orientation: portrait){
+	#carouselMobile{margin-top: 35%;}
+}

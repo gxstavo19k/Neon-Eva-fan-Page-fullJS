@@ -10,7 +10,7 @@ function carregarEstilo(arquivo) {
 
 function criarHeader() {
   carregarEstilo('src/components/header.css');
-  carregarEstilo('src/mobile.css');
+  carregarEstilo('src/styles/mobile.css');
 
   const headerHTML = `
   <header id="header">

@@ -1,4 +1,3 @@
----
 
 
 # DESAFIO INDIVIDUAL: PROJETO WEB
@@ -8,7 +7,8 @@
 
 <div align="center">
 
-![Preview do site](https://raw.githubusercontent.com/gustavo19k/1o-projeto-web/main/docs/.github/preview/video-preview.gif)
+
+<img src="https://raw.githubusercontent.com/gustavo19k/1o-projeto-web/main/docs/.github/preview/video-preview.gif" height="400" width="768">
 
 
 
@@ -31,7 +31,7 @@ O site foi estruturado de forma semântica, utilizando divs com ids e classes es
 
 ## Estilização
 O estilo que deve ser para todo o site se encontra no arquivo `global.css`.
-A estilização dos elementos e atributos html foram dividida em componentes, com cada parte do site tendo seu próprio arquivo de estilo. Dentro da pasta [src](./src/styles), existem arquivos direcionados para o estilo do background dos documentos html, app-main para o container principal do index.html e app-sub para o container sub; componentizei o header do site para poder utilizar em todas os documentos html - o estilo do header se encontra dentro da pasta [components](./src/components), footer, mobile para o estilo do botão hamburger & wallpapers para o estilo do segundo documento; todos esses arquivos estão importados no escopo do global.css.
+A estilização dos elementos e atributos html foram repartidos em componentes, com cada parte do site tendo seu próprio arquivo de estilo. Dentro da pasta [src](./src/styles), existem arquivos direcionados para o estilo do background dos documentos html, app-main para o container principal do index.html e app-sub para o container sub; componentizei o header do site para poder utilizar em todas os documentos html - o estilo do header se encontra dentro da pasta [components](./src/components), footer, mobile para o estilo do botão hamburger & wallpapers para o estilo do segundo documento; todos esses arquivos estão importados no escopo do global.css.
 
 <!--### Responsividade-->
 
@@ -43,7 +43,7 @@ A estilização dos elementos e atributos html foram dividida em componentes, co
 
 ## Contribuição
 
-Este projeto é um exercício para o curso SouKick e para o meu portifólio do curso e não está aberto para contribuições.
+Este projeto é  para o meu portifólio de exercícios do curso SouKick; não está aberto para contribuições e é de total autoria minha.
 
 
 </div>
