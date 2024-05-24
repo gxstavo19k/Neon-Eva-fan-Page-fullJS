@@ -62,13 +62,15 @@ function criarHeader() {
   const button = document.getElementById('button');
   const navigation = document.querySelector('.navigation');
   const navLinks = document.querySelectorAll('.navigation__link');
+  const carousel1 = document.getElementById('carouselMobile'); // Primeiro carrossel
+
 
   function handleClick() {
     console.log("Button clicked");
     button.classList.toggle('active');
     navigation.classList.toggle('active');
-    const carousel = document.getElementById('carouselExampleIndicators');
-    carousel.classList.toggle('hide');
+    carousel1.classList.toggle('hide');
+
   }
 
   button.addEventListener('click', handleClick);

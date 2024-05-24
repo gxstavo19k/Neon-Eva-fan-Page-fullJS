@@ -11,7 +11,11 @@
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="src/global.css">
     <link rel="stylesheet" href="src/styles/wallpapers.css">
-    <link rel="stylesheet" href="src/styles/mobile-carousel.css" media="screen (max-height:1078px) and (max-width: 1024)">
+    <!-- <link rel="stylesheet" href="src/styles/mobile-carousel.css"
+        media="screen (max-height:1078px) and (max-width: 1024)"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 
 
 </head>
@@ -30,7 +34,7 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" id="carousel-Desktop">
                     <img src="https://raw.githubusercontent.com/gustavo19k/assets-SouKick/main/1o-projeto-web/Wallpapers/Neon-Genesis-Evangelion-Wallpaper-trio.jpg"
                         class="d-block w-100" alt="...">
                     <div class="carousel-caption">
@@ -38,7 +42,7 @@
                         <p>Você pode baixar esse papel de parede clicando no link abaixo!</p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" id="carousel-Desktop">
                     <img src="https://raw.githubusercontent.com/gustavo19k/assets-SouKick/main/1o-projeto-web/Wallpapers/Eva-chaos-Wallpaper.png"
                         class="d-block w-100" alt="...">
                     <div class="carousel-caption">
@@ -46,7 +50,7 @@
                         <p>Você pode baixar esse papel de parede clicando no link abaixo!</p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" id="carousel-Desktop">
                     <img src="https://raw.githubusercontent.com/gustavo19k/assets-SouKick/main/1o-projeto-web/Wallpapers/EVA-Unit-01-wallpaper.jpg"
                         class="d-block w-100" alt="...">
                     <div class="carousel-caption">
@@ -70,7 +74,7 @@
 
         <!-- Carrousel mobile -->
 
-        <div id="carouselMobile" class="carousel slide d-lg-none " data-bs-ride="carousel">
+        <div id="carouselMobile" class="carousel slide d-lg-none" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselMobile" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -81,26 +85,25 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="public/images/wallpapers/1280x2120_Evangelion-3.0.jpg" class="d-block w-100 " alt="...">
-                    <div class="carousel-caption1">
-                        <!-- <h5 class="heading-carrousel-1">Wallpaper 1!</h5>
-                        <p>Você pode baixar esse papel de parede clicando no link abaixo!</p> -->
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="public/images/wallpapers/1280x2120_the-End.png" class="d-block w-100 " alt="...">
-                    <div class="carousel-caption1">
-                        <!-- <h5 class="heading-carrousel-2">Wallpaper 2!</h5>
-                        <p>Você pode baixar esse papel de parede clicando no link abaixo!</p> -->
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="public/images/wallpapers/Wallpaper-Asuka-Shinji-Ayanami-Gendo_1280x2120.jpg"
+                    <img src="https://raw.githubusercontent.com/gustavo19k/assets-SouKick/main/1o-projeto-web/Wallpapers/1280x2120_Evangelion-3.0.jpg"
                         class="d-block w-100 " alt="...">
                     <div class="carousel-caption1">
-                        <!-- <h5 class="heading-carrousel-3">Wallpaper 3!</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/gustavo19k/assets-SouKick/main/1o-projeto-web/Wallpapers/1280x2120_the-End.png"
+                        class="d-block w-100 " alt="...">
+                    <div class="carousel-caption1">
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://raw.githubusercontent.com/gustavo19k/assets-SouKick/main/1o-projeto-web/Wallpapers/Wallpaper-Asuka-Shinji-Ayanami-Gendo_1280x2120.jpg"
+                        class="d-block w-100 " alt="...">
+                    <div class="carousel-caption1">
                         <p class="paragrafo-carrousel">Você pode baixar esse papel de parede clicando no link abaixo!
-                        </p> -->
+
                     </div>
                 </div>
             </div>
@@ -115,11 +118,13 @@
         </div>
 
 
-        <!-- Botão de download -->
-        <div class="text-center mt-4" id="botao">
-            <a href="#" id="downloadButton" class="btn btn-primary"
-                title="Botão de download da atual imagem do carrousel">Baixar Imagem Atual</a>
+        <!-- Botão de download para o carrossel mobile -->
+        <div class="text-center mt-4" id="botaoMobile">
+            <!-- A classe 'btn-success' do Bootstrap torna o botão verde -->
+            <a href="#" id="downloadButtonMobile" class="btn btn-success"
+                title="Botão de download da atual imagem do carrossel mobile">Baixar Imagem Atual</a>
         </div>
+
     </div>
 
     <footer class="mt-auto py-1 .bg-dark.bg-gradient ">
@@ -159,6 +164,58 @@
             a.download = e.target.href.split('/').pop();  // nome do arquivo para download
             a.click();  // simula um clique no link para iniciar o download
         };
+        xhr.send();
+    });
+
+
+
+
+</script>
+
+
+<script>
+
+    // Seleciona o botão de download do carrossel mobile
+    const downloadButtonMobile = document.getElementById('downloadButtonMobile');
+    // Seleciona o carrossel mobile
+    const carouselMobile = document.getElementById('carouselMobile');
+
+    // Adiciona um ouvinte de evento para quando o slide do carrossel mobile muda
+    carouselMobile.addEventListener('slid.bs.carousel', function () {
+        // Seleciona a imagem ativa no carrossel mobile
+        const activeImageMobile = carouselMobile.querySelector('.carousel-item.active img');
+        // Atualiza o link do botão de download para a URL da imagem ativa
+        downloadButtonMobile.href = activeImageMobile.src;
+    });
+
+    // Seleciona a imagem ativa inicial no carrossel mobile
+    const initialActiveImageMobile = carouselMobile.querySelector('.carousel-item.active img');
+    // Define o link do botão de download para a URL da imagem ativa inicial
+    downloadButtonMobile.href = initialActiveImageMobile.src;
+
+    // Adiciona um ouvinte de evento para quando o botão de download é clicado
+    downloadButtonMobile.addEventListener('click', function (e) {
+        // Impede o comportamento padrão do link
+        e.preventDefault();
+        // Cria uma nova requisição HTTP
+        var xhr = new XMLHttpRequest();
+        // Configura a requisição para obter a imagem
+        xhr.open('GET', e.target.href, true);
+        // Define o tipo de resposta para 'blob' para que possamos obter a imagem como um arquivo
+        xhr.responseType = 'blob';
+        xhr.onload = function () {
+            // Cria uma URL para o arquivo de imagem
+            var url = window.URL.createObjectURL(xhr.response);
+            // Cria um novo link
+            var a = document.createElement('a');
+            // Define o href do link para a URL da imagem
+            a.href = url;
+            // Define o nome do arquivo para download
+            a.download = e.target.href.split('/').pop();
+            // Simula um clique no link para iniciar o download
+            a.click();
+        };
+        // Envia a requisição
         xhr.send();
     });
 </script>

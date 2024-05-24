@@ -33,11 +33,11 @@ a:hover {
 
 
 
- .carousel-item {
+.carousel-item {
   position: relative;
 }
 
-.carousel-item::after {
+#carousel-Desktop::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -53,7 +53,7 @@ a:hover {
   pointer-events: none;
 }
 
-.carousel-item:hover::after {
+#carousel-Desktop:hover::after {
   opacity: 10;
 }
 
@@ -76,7 +76,7 @@ a:hover {
   pointer-events: none;
 }
 
-.carousel-item:hover .carousel-caption {
+#carousel-Desktop:hover .carousel-caption {
   opacity: 1;
   color: white;
 }
@@ -95,4 +95,58 @@ a:hover {
 
 .paragrafo-carrousel {
   color: white;
+}
+
+
+#carouselMobile .carousel-item img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.carousel-item img {
+
+  object-fit: contain;
+}
+
+
+
+
+
+#carouselMobile {
+
+  max-height: 450px;
+  overflow: hidden;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+@media only screen and (orientation: landscape) {
+  #carouselMobile .carousel-item img {
+    padding-top: 0%;
+    height: 220px;
+
+    margin-top: 0%;
+    object-fit: fill;
+
+    width: auto;
+
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
+
+
+@media only screen and (orientation: portrait) {
+  #carouselMobile {
+    padding-top: 0%;
+
+
+    margin-top: 25%;
+  }
 }

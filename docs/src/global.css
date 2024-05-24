@@ -60,13 +60,29 @@ a {
 
 #carouselMobile {
 
-    max-height: 475px; 
-    overflow: hidden;
+	max-height: 450px;
+	overflow: hidden;
 	max-width: 300px;
 	margin-left: auto;
 	margin-right: auto;
+
 }
 
-@media only screen and (orientation: portrait){
-	#carouselMobile{margin-top: 35%;}
+
+@media only screen and (orientation: landscape) {
+	#carouselMobile .carousel-item img {
+		padding-top: 0%;
+		height: 220px;
+
+		margin-top: 0%;
+		object-fit: fill;
+
+		width: auto;
+
+	}
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: black;
 }

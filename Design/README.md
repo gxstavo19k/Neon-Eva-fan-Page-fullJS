@@ -1,7 +1,17 @@
 # Design do Projeto
-Você pode acessar o protótipo desenvolvido no FIGMA clicando neste link:[Figma!](
+Você pode acessar o protótipo desenvolvido no FIGMA clicando neste link: 
+[Figma!](
 https://www.figma.com/file/zihjoBwL6gKZkchwUgvsbi/Prototipo-Figma?type=design&mode=design&t=lsXZkVwmyfICO1Se-1)
+
 Este diretório contém todos os arquivos de design usados para criar o layout do meu primeiro projeto web no [Curso SouKick!](https://soukick.com.br)
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/gustavo19k/assets-SouKick/main/SouKick.png" alt="Curso#SouKick" height="28"> ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+
+
+
+</div>
 
 ## Arquivos de Design
 
