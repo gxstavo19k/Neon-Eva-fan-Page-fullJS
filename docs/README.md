@@ -1,4 +1,4 @@
----
+
 
 # Documentação do Projeto Web
 
@@ -53,11 +53,11 @@ O código fonte do projeto é escrito em HTML5 e JavaScript e segue a estrutura 
 
 O documento HTML começa com a declaração do tipo de documento `<!doctype html>`. O idioma do documento é definido como Português do Brasil (`<html lang="pt-BR">`).
 
-### Cabeçalho (`<head>`)
+#### Cabeçalho (`<head>`)
 
 O cabeçalho do documento contém o título do site, links para os arquivos CSS, o ícone do site (favicon), e várias meta tags. As meta tags incluem informações de codificação de caracteres, configurações de viewport, tags Open Graph para SEO e compartilhamento social, e tags do Twitter Card.
 
-### Corpo (`<body>`)
+#### Corpo (`<body>`)
 
 
 O corpo do documento contém a estrutura principal do site, que é dividida em duas seções principais: `app-main` e `app-sub`.
